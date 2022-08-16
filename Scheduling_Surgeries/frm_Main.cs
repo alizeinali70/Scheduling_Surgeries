@@ -16,5 +16,17 @@ namespace Scheduling_Surgeries
         {
             InitializeComponent();
         }
+
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            this.Dispose();
+        }
+
+        private void btn_Doctor_Click(object sender, EventArgs e)
+        {
+            frm_Doctor frm_Doctor = new frm_Doctor();
+            frm_Doctor.ShowDialog();
+        }
     }
 }
