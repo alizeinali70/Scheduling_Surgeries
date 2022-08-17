@@ -70,6 +70,7 @@
             this.btn_Do_Surgery.TabIndex = 15;
             this.btn_Do_Surgery.Text = "Do_Surgery";
             this.btn_Do_Surgery.UseVisualStyleBackColor = true;
+            this.btn_Do_Surgery.Click += new System.EventHandler(this.btn_Do_Surgery_Click);
             // 
             // button6
             // 
