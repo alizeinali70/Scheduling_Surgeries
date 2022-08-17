@@ -28,5 +28,30 @@ namespace Scheduling_Surgeries
             frm_Doctor frm_Doctor = new frm_Doctor();
             frm_Doctor.ShowDialog();
         }
+
+        private void btn_Nurse_Click(object sender, EventArgs e)
+        {
+            frm_Nurse frm_Nurse= new frm_Nurse();
+            frm_Nurse.ShowDialog();
+
+        }
+
+        private void btn_Surgery_Click(object sender, EventArgs e)
+        {
+            frm_Surgery_Name frm_Surgery_Name=  new frm_Surgery_Name();
+            frm_Surgery_Name.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            frm_Patient frm_Patient= new frm_Patient();
+            frm_Patient.ShowDialog();
+        }
+
+        private void btn_Surgery_Room_Click(object sender, EventArgs e)
+        {
+            frm_Surgery_Room frm_Surgery_Room = new frm_Surgery_Room();
+            frm_Surgery_Room.ShowDialog();
+        }
     }
 }

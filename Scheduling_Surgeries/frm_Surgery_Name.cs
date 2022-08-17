@@ -2,41 +2,30 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.Sql;
-using System.Data.SqlClient;
-
 
 namespace Scheduling_Surgeries
 {
-    public partial class frm_Doctor : Form
+    public partial class frm_Surgery_Name : Form
     {
-
         SqlConnection conn = new SqlConnection(Properties.Settings.Default.sqlcon);
-
-        public frm_Doctor()
+        public frm_Surgery_Name()
         {
             InitializeComponent();
         }
-
-       
-        
-        private void frm_Doctor_Load(object sender, EventArgs e)
+private void frm_Surgery_Name_Load(object sender, EventArgs e)
         {
             Select();
         }
 
-        private void btn_Back_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
         public void Select()
         {
-            SqlCommand cmd_select = new SqlCommand("sp_doctor_select", conn);
+            SqlCommand cmd_select = new SqlCommand("sp_surgery_name_select", conn);
             cmd_select.CommandType = CommandType.StoredProcedure;
             SqlDataAdapter da = new SqlDataAdapter(cmd_select);
             DataSet ds = new DataSet();
@@ -49,11 +38,12 @@ namespace Scheduling_Surgeries
         {
             try
             {
-                SqlCommand cmd_Insert = new SqlCommand("sp_doctor_insert",conn);
+                SqlCommand cmd_Insert = new SqlCommand("sp_surgery_name_insert", conn);
                 cmd_Insert.CommandType = CommandType.StoredProcedure;
                 cmd_Insert.Parameters.AddWithValue("@Fullname", txt_Fullname.Text);
-                cmd_Insert.Parameters.AddWithValue("@Specialist", txt_Specialist.Text);
-                cmd_Insert.Parameters.AddWithValue("@Busy", false);
+                cmd_Insert.Parameters.AddWithValue("@Min_Duration", int.Parse(txt_Min_Duration.Text));
+                cmd_Insert.Parameters.AddWithValue("@Max_Duration", int.Parse(txt_Max_Duration.Text));
+               
 
                 conn.Open();
                 cmd_Insert.ExecuteNonQuery();
@@ -66,9 +56,11 @@ namespace Scheduling_Surgeries
                 conn.Close();
                 MessageBox.Show(exp.Message);
             }
-            
+        }
 
-
+        private void btn_Back_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

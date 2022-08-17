@@ -80,6 +80,7 @@
             this.button6.TabIndex = 14;
             this.button6.Text = "Patient";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // btn_Surgery_Room
             // 
@@ -90,6 +91,7 @@
             this.btn_Surgery_Room.TabIndex = 13;
             this.btn_Surgery_Room.Text = "Surgery_Room";
             this.btn_Surgery_Room.UseVisualStyleBackColor = true;
+            this.btn_Surgery_Room.Click += new System.EventHandler(this.btn_Surgery_Room_Click);
             // 
             // btn_Surgery
             // 
@@ -100,6 +102,7 @@
             this.btn_Surgery.TabIndex = 12;
             this.btn_Surgery.Text = "Surgery";
             this.btn_Surgery.UseVisualStyleBackColor = true;
+            this.btn_Surgery.Click += new System.EventHandler(this.btn_Surgery_Click);
             // 
             // btn_Nurse
             // 
@@ -110,6 +113,7 @@
             this.btn_Nurse.TabIndex = 11;
             this.btn_Nurse.Text = "Nurse";
             this.btn_Nurse.UseVisualStyleBackColor = true;
+            this.btn_Nurse.Click += new System.EventHandler(this.btn_Nurse_Click);
             // 
             // btn_Exit
             // 
