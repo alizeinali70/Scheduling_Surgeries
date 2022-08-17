@@ -47,10 +47,13 @@
             this.btn_Back = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.cmb_Patient = new System.Windows.Forms.ComboBox();
+            this.btn_Save = new System.Windows.Forms.Button();
+            this.chbox_Is_Emergency = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label3
             // 
+            this.label3.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.label3.ForeColor = System.Drawing.Color.Red;
             this.label3.Location = new System.Drawing.Point(0, 403);
@@ -62,6 +65,7 @@
             // 
             // cmb_Doctor
             // 
+            this.cmb_Doctor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmb_Doctor.FormattingEnabled = true;
             this.cmb_Doctor.Location = new System.Drawing.Point(167, 21);
             this.cmb_Doctor.Name = "cmb_Doctor";
@@ -71,6 +75,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Location = new System.Drawing.Point(11, 24);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
@@ -81,6 +86,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label2.Location = new System.Drawing.Point(429, 24);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
@@ -90,6 +96,7 @@
             // 
             // cmb_Surgery
             // 
+            this.cmb_Surgery.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmb_Surgery.FormattingEnabled = true;
             this.cmb_Surgery.Location = new System.Drawing.Point(592, 21);
             this.cmb_Surgery.Name = "cmb_Surgery";
@@ -98,6 +105,7 @@
             // 
             // label4
             // 
+            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label4.Location = new System.Drawing.Point(429, 74);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
@@ -107,6 +115,7 @@
             // 
             // cmb_Surgery_Room
             // 
+            this.cmb_Surgery_Room.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmb_Surgery_Room.FormattingEnabled = true;
             this.cmb_Surgery_Room.Location = new System.Drawing.Point(592, 83);
             this.cmb_Surgery_Room.Name = "cmb_Surgery_Room";
@@ -116,6 +125,7 @@
             // chbox_Nurse
             // 
             this.chbox_Nurse.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.chbox_Nurse.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chbox_Nurse.FormattingEnabled = true;
             this.chbox_Nurse.Location = new System.Drawing.Point(167, 80);
             this.chbox_Nurse.Name = "chbox_Nurse";
@@ -125,6 +135,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label5.Location = new System.Drawing.Point(11, 83);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
@@ -135,6 +146,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label6.Location = new System.Drawing.Point(11, 332);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
@@ -144,6 +156,7 @@
             // 
             // datetime_Date
             // 
+            this.datetime_Date.Cursor = System.Windows.Forms.Cursors.Hand;
             this.datetime_Date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.datetime_Date.Location = new System.Drawing.Point(197, 332);
             this.datetime_Date.Name = "datetime_Date";
@@ -153,6 +166,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label7.Location = new System.Drawing.Point(11, 373);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
@@ -163,6 +177,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label8.Location = new System.Drawing.Point(429, 373);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
@@ -172,6 +187,7 @@
             // 
             // datetime_Start_Time
             // 
+            this.datetime_Start_Time.Cursor = System.Windows.Forms.Cursors.Hand;
             this.datetime_Start_Time.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.datetime_Start_Time.Location = new System.Drawing.Point(197, 373);
             this.datetime_Start_Time.Name = "datetime_Start_Time";
@@ -180,6 +196,7 @@
             // 
             // datetime_End_Time
             // 
+            this.datetime_End_Time.Cursor = System.Windows.Forms.Cursors.Hand;
             this.datetime_End_Time.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.datetime_End_Time.Location = new System.Drawing.Point(608, 373);
             this.datetime_End_Time.Name = "datetime_End_Time";
@@ -190,6 +207,7 @@
             // 
             this.btn_Back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Back.BackgroundImage")));
             this.btn_Back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Back.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Back.Location = new System.Drawing.Point(793, 447);
             this.btn_Back.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Back.Name = "btn_Back";
@@ -201,6 +219,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label9.Location = new System.Drawing.Point(429, 161);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
@@ -210,11 +229,37 @@
             // 
             // cmb_Patient
             // 
+            this.cmb_Patient.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmb_Patient.FormattingEnabled = true;
             this.cmb_Patient.Location = new System.Drawing.Point(592, 158);
             this.cmb_Patient.Name = "cmb_Patient";
             this.cmb_Patient.Size = new System.Drawing.Size(242, 38);
             this.cmb_Patient.TabIndex = 35;
+            // 
+            // btn_Save
+            // 
+            this.btn_Save.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Save.BackgroundImage")));
+            this.btn_Save.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Save.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Save.Location = new System.Drawing.Point(730, 448);
+            this.btn_Save.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Save.Name = "btn_Save";
+            this.btn_Save.Size = new System.Drawing.Size(45, 49);
+            this.btn_Save.TabIndex = 37;
+            this.btn_Save.UseVisualStyleBackColor = true;
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
+            // 
+            // chbox_Is_Emergency
+            // 
+            this.chbox_Is_Emergency.AutoSize = true;
+            this.chbox_Is_Emergency.BackColor = System.Drawing.Color.Yellow;
+            this.chbox_Is_Emergency.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.chbox_Is_Emergency.Location = new System.Drawing.Point(592, 231);
+            this.chbox_Is_Emergency.Name = "chbox_Is_Emergency";
+            this.chbox_Is_Emergency.Size = new System.Drawing.Size(155, 34);
+            this.chbox_Is_Emergency.TabIndex = 38;
+            this.chbox_Is_Emergency.Text = "Is Emergency";
+            this.chbox_Is_Emergency.UseVisualStyleBackColor = false;
             // 
             // frm_Do_Surgery
             // 
@@ -223,6 +268,8 @@
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(855, 497);
             this.ControlBox = false;
+            this.Controls.Add(this.chbox_Is_Emergency);
+            this.Controls.Add(this.btn_Save);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.cmb_Patient);
             this.Controls.Add(this.btn_Back);
@@ -272,5 +319,7 @@
         private System.Windows.Forms.Button btn_Back;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox cmb_Patient;
+        private System.Windows.Forms.Button btn_Save;
+        private System.Windows.Forms.CheckBox chbox_Is_Emergency;
     }
 }

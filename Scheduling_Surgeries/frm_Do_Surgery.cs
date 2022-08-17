@@ -10,10 +10,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Scheduling_Surgeries
-{ 
+{
 
     public partial class frm_Do_Surgery : Form
-    {SqlConnection conn = new SqlConnection(Properties.Settings.Default.sqlcon);
+    {
+        SqlConnection conn = new SqlConnection(Properties.Settings.Default.sqlcon);
         public frm_Do_Surgery()
         {
             InitializeComponent();
@@ -61,7 +62,7 @@ namespace Scheduling_Surgeries
             cmb_Surgery_Room.ValueMember = "Fullname";
         }
 
-        
+
         public void Select_Patient()
         {
             SqlCommand cmd_select = new SqlCommand("sp_patient_select", conn);
@@ -73,7 +74,7 @@ namespace Scheduling_Surgeries
             cmb_Patient.DataSource = ds.Tables[0];
             cmb_Patient.ValueMember = "Fullname";
         }
-        
+
         public void Select_Nurse()
         {
             SqlCommand cmd_select = new SqlCommand("sp_nurse_select", conn);
@@ -82,15 +83,35 @@ namespace Scheduling_Surgeries
             DataTable dt = new DataTable();
             da.Fill(dt);
 
-            for(int i = 0; i < dt.Rows.Count; i++)
+            for (int i = 0; i < dt.Rows.Count; i++)
             {
-                chbox_Nurse.Items.Add(dt.Rows[i]["Fullname"].ToString());
+                if (dt.Rows[i]["Busy"].Equals(false))                   
+                    chbox_Nurse.Items.Add(dt.Rows[i]["Fullname"].ToString());
             }
         }
 
         private void btn_Back_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btn_Save_Click(object sender, EventArgs e)
+        {
+            // Determine if there are any items checked.  
+            if (chbox_Nurse.CheckedItems.Count != 0)
+            {
+                // If so, loop through all checked items and print results.  
+                string s = "";
+                for (int x = 0; x < chbox_Nurse.CheckedItems.Count; x++)
+                {
+                    s = s + chbox_Nurse.CheckedItems[x].ToString() + ",";
+                }
+                MessageBox.Show(s);
+            }
+
+
+
+
         }
     }
 }
