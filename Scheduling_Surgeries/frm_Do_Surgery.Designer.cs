@@ -56,7 +56,7 @@
             this.label3.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(0, 403);
+            this.label3.Location = new System.Drawing.Point(0, 401);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(465, 93);
@@ -208,10 +208,10 @@
             this.btn_Back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Back.BackgroundImage")));
             this.btn_Back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_Back.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Back.Location = new System.Drawing.Point(793, 447);
+            this.btn_Back.Location = new System.Drawing.Point(774, 434);
             this.btn_Back.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Back.Name = "btn_Back";
-            this.btn_Back.Size = new System.Drawing.Size(50, 50);
+            this.btn_Back.Size = new System.Drawing.Size(60, 60);
             this.btn_Back.TabIndex = 34;
             this.btn_Back.UseVisualStyleBackColor = true;
             this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
@@ -241,10 +241,10 @@
             this.btn_Save.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Save.BackgroundImage")));
             this.btn_Save.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_Save.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Save.Location = new System.Drawing.Point(730, 448);
+            this.btn_Save.Location = new System.Drawing.Point(707, 434);
             this.btn_Save.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Save.Name = "btn_Save";
-            this.btn_Save.Size = new System.Drawing.Size(45, 49);
+            this.btn_Save.Size = new System.Drawing.Size(60, 60);
             this.btn_Save.TabIndex = 37;
             this.btn_Save.UseVisualStyleBackColor = true;
             this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
@@ -266,7 +266,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(855, 497);
+            this.ClientSize = new System.Drawing.Size(838, 497);
             this.ControlBox = false;
             this.Controls.Add(this.chbox_Is_Emergency);
             this.Controls.Add(this.btn_Save);
