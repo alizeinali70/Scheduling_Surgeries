@@ -59,5 +59,11 @@ namespace Scheduling_Surgeries
             frm_Do_Surgery frm_Do_Surgery = new frm_Do_Surgery();
             frm_Do_Surgery.ShowDialog();
         }
+
+        private void btn_Report_Click(object sender, EventArgs e)
+        {
+            frm_Report frm_Report= new frm_Report();
+            frm_Report.ShowDialog();
+        }
     }
 }

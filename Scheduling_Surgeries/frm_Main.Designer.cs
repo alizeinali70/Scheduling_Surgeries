@@ -53,6 +53,7 @@
             // 
             // btn_Report
             // 
+            this.btn_Report.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Report.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Report.Location = new System.Drawing.Point(282, 85);
             this.btn_Report.Name = "btn_Report";
@@ -60,9 +61,11 @@
             this.btn_Report.TabIndex = 16;
             this.btn_Report.Text = "Report";
             this.btn_Report.UseVisualStyleBackColor = true;
+            this.btn_Report.Click += new System.EventHandler(this.btn_Report_Click);
             // 
             // btn_Do_Surgery
             // 
+            this.btn_Do_Surgery.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Do_Surgery.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Do_Surgery.Location = new System.Drawing.Point(147, 85);
             this.btn_Do_Surgery.Name = "btn_Do_Surgery";
@@ -74,6 +77,7 @@
             // 
             // button6
             // 
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button6.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.Location = new System.Drawing.Point(12, 85);
             this.button6.Name = "button6";
@@ -85,6 +89,7 @@
             // 
             // btn_Surgery_Room
             // 
+            this.btn_Surgery_Room.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Surgery_Room.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Surgery_Room.Location = new System.Drawing.Point(417, 12);
             this.btn_Surgery_Room.Name = "btn_Surgery_Room";
@@ -96,6 +101,7 @@
             // 
             // btn_Surgery
             // 
+            this.btn_Surgery.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Surgery.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Surgery.Location = new System.Drawing.Point(282, 12);
             this.btn_Surgery.Name = "btn_Surgery";
@@ -107,6 +113,7 @@
             // 
             // btn_Nurse
             // 
+            this.btn_Nurse.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Nurse.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Nurse.Location = new System.Drawing.Point(147, 12);
             this.btn_Nurse.Name = "btn_Nurse";
@@ -120,15 +127,17 @@
             // 
             this.btn_Exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Exit.BackgroundImage")));
             this.btn_Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Exit.Location = new System.Drawing.Point(724, 353);
+            this.btn_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Exit.Location = new System.Drawing.Point(722, 340);
             this.btn_Exit.Name = "btn_Exit";
-            this.btn_Exit.Size = new System.Drawing.Size(79, 67);
+            this.btn_Exit.Size = new System.Drawing.Size(80, 80);
             this.btn_Exit.TabIndex = 10;
             this.btn_Exit.UseVisualStyleBackColor = true;
             this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
             // btn_Doctor
             // 
+            this.btn_Doctor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Doctor.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Doctor.Location = new System.Drawing.Point(12, 12);
             this.btn_Doctor.Name = "btn_Doctor";

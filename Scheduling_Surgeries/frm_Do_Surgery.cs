@@ -130,6 +130,7 @@ namespace Scheduling_Surgeries
                     {
                         Update("sp_nurse_update", chbox_Nurse.CheckedItems[x].ToString());
                     }
+                    MessageBox.Show("The data Saved successful", "Saved", MessageBoxButtons.OK);
                 }
                 else
                     MessageBox.Show("This Doctor is Busy now", "Error",MessageBoxButtons.OK );
