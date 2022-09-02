@@ -93,7 +93,8 @@
             this.datagrid.MultiSelect = false;
             this.datagrid.Name = "datagrid";
             this.datagrid.ReadOnly = true;
-            this.datagrid.Size = new System.Drawing.Size(466, 169);
+            this.datagrid.RowHeadersWidth = 51;
+            this.datagrid.Size = new System.Drawing.Size(698, 169);
             this.datagrid.TabIndex = 34;
             // 
             // txt_Fullname
@@ -101,7 +102,7 @@
             this.txt_Fullname.Location = new System.Drawing.Point(107, 9);
             this.txt_Fullname.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Fullname.Name = "txt_Fullname";
-            this.txt_Fullname.Size = new System.Drawing.Size(200, 35);
+            this.txt_Fullname.Size = new System.Drawing.Size(200, 42);
             this.txt_Fullname.TabIndex = 30;
             // 
             // label1
@@ -110,7 +111,7 @@
             this.label1.Location = new System.Drawing.Point(10, 11);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 30);
+            this.label1.Size = new System.Drawing.Size(125, 37);
             this.label1.TabIndex = 29;
             this.label1.Text = "Fullname";
             // 
@@ -131,7 +132,7 @@
             this.txt_Min_Duration.Location = new System.Drawing.Point(151, 62);
             this.txt_Min_Duration.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Min_Duration.Name = "txt_Min_Duration";
-            this.txt_Min_Duration.Size = new System.Drawing.Size(68, 35);
+            this.txt_Min_Duration.Size = new System.Drawing.Size(68, 42);
             this.txt_Min_Duration.TabIndex = 38;
             // 
             // label2
@@ -140,7 +141,7 @@
             this.label2.Location = new System.Drawing.Point(10, 62);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(139, 30);
+            this.label2.Size = new System.Drawing.Size(178, 37);
             this.label2.TabIndex = 37;
             this.label2.Text = "Min_Duration";
             // 
@@ -149,7 +150,7 @@
             this.txt_Max_Duration.Location = new System.Drawing.Point(373, 62);
             this.txt_Max_Duration.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Max_Duration.Name = "txt_Max_Duration";
-            this.txt_Max_Duration.Size = new System.Drawing.Size(68, 35);
+            this.txt_Max_Duration.Size = new System.Drawing.Size(68, 42);
             this.txt_Max_Duration.TabIndex = 40;
             // 
             // label4
@@ -158,16 +159,16 @@
             this.label4.Location = new System.Drawing.Point(221, 64);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(143, 30);
+            this.label4.Size = new System.Drawing.Size(182, 37);
             this.label4.TabIndex = 39;
             this.label4.Text = "Max_Duration";
             // 
             // frm_Surgery_Name
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 36F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(471, 356);
+            this.ClientSize = new System.Drawing.Size(705, 356);
             this.ControlBox = false;
             this.Controls.Add(this.txt_Max_Duration);
             this.Controls.Add(this.label4);

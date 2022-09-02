@@ -34,6 +34,7 @@
             this.datetime_StartDate = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.btn_Search = new System.Windows.Forms.Button();
+            this.btn_Schedul = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,6 +46,7 @@
             this.datagrid.Location = new System.Drawing.Point(10, 12);
             this.datagrid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.datagrid.Name = "datagrid";
+            this.datagrid.RowHeadersWidth = 51;
             this.datagrid.Size = new System.Drawing.Size(947, 419);
             this.datagrid.TabIndex = 0;
             // 
@@ -95,13 +97,27 @@
             this.btn_Search.UseVisualStyleBackColor = true;
             this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
             // 
+            // btn_Schedul
+            // 
+            this.btn_Schedul.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Schedul.BackgroundImage")));
+            this.btn_Schedul.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Schedul.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Schedul.Location = new System.Drawing.Point(450, 436);
+            this.btn_Schedul.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_Schedul.Name = "btn_Schedul";
+            this.btn_Schedul.Size = new System.Drawing.Size(60, 54);
+            this.btn_Schedul.TabIndex = 33;
+            this.btn_Schedul.UseVisualStyleBackColor = true;
+            this.btn_Schedul.Click += new System.EventHandler(this.btn_Schedul_Click);
+            // 
             // frm_Report
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(957, 500);
+            this.ClientSize = new System.Drawing.Size(968, 500);
             this.ControlBox = false;
+            this.Controls.Add(this.btn_Schedul);
             this.Controls.Add(this.btn_Search);
             this.Controls.Add(this.datetime_StartDate);
             this.Controls.Add(this.label6);
@@ -109,7 +125,7 @@
             this.Controls.Add(this.datagrid);
             this.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "frm_Report";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Load += new System.EventHandler(this.frm_Report_Load);
@@ -126,5 +142,6 @@
         private System.Windows.Forms.DateTimePicker datetime_StartDate;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btn_Search;
+        private System.Windows.Forms.Button btn_Schedul;
     }
 }

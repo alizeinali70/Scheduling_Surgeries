@@ -31,10 +31,10 @@ namespace Scheduling_Surgeries
         public void Select()
         {
             var End_Date = datetime_StartDate.Value.Date.AddDays(7);
-            SqlCommand cmd_select = new SqlCommand("sp_do_surgery_select", conn);
+            SqlCommand cmd_select = new SqlCommand("sp_do_surgery_select_s_date", conn);
             cmd_select.CommandType = CommandType.StoredProcedure;
             cmd_select.Parameters.AddWithValue("@S_Date", datetime_StartDate.Value.Date);
-            cmd_select.Parameters.AddWithValue("@E_Date", End_Date);
+          //  cmd_select.Parameters.AddWithValue("@E_Date", End_Date);
             SqlDataAdapter da = new SqlDataAdapter(cmd_select);
             DataSet ds = new DataSet();
             da.Fill(ds);
@@ -47,6 +47,23 @@ namespace Scheduling_Surgeries
             Select();
         }
 
-        
+        public void Select_week()
+        {
+            var End_Date = datetime_StartDate.Value.Date.AddDays(7);
+            SqlCommand cmd_select = new SqlCommand("sp_do_surgery_select", conn);
+            cmd_select.CommandType = CommandType.StoredProcedure;
+            cmd_select.Parameters.AddWithValue("@S_Date", datetime_StartDate.Value.Date);
+            cmd_select.Parameters.AddWithValue("@E_Date", End_Date);
+            SqlDataAdapter da = new SqlDataAdapter(cmd_select);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+
+            datagrid.DataSource = ds.Tables[0];
+        }
+
+        private void btn_Schedul_Click(object sender, EventArgs e)
+        {
+            Select_week();
+        }
     }
 }
